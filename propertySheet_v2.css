@@ -1,0 +1,258 @@
+#page {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(253, 253, 253);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 50px 20px 50px 20px;
+}
+
+.table {
+    display: table;
+    border-spacing: 12px;
+    /* 这里要设置100%，否则table-cell中设置50%没用 */
+    width: 100%;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-caption {
+    display: table-caption;
+    width: 573px;
+    margin-left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 170%;
+}
+
+.table-cell {
+    display: table-cell;
+    width: 50%;
+    /* 这一句太重要了，实现两个cell水平对齐。为什么叫它vertical-align？！fuck you！ */
+    vertical-align: top;
+}
+
+.bottomCell {
+    border-bottom: 2px black solid;
+}
+
+.header {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    color: white;
+    padding: 0.5% 5% 0.5% 5%
+}
+
+.text {
+    font-size: 120%;
+    padding: 0% 5% 0.5% 20%;
+}
+
+#goal {
+    margin: 0px 12px 12px 12px;
+}
+
+#goal span em {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.em_bold {
+    font-style: normal;
+    font-weight: bold;
+}
+
+caption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding-left: 2.3%;
+}
+
+.like_caption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding-left: 1.3%;
+}
+
+.likeCaption {
+    font-size: 150%;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px black solid;
+}
+
+.speiceTable caption {
+    width: 25%;
+}
+
+table.speiceTable {
+    border: none;
+}
+
+table.speiceTable tr td{
+    border: none;
+    border-top: 3px solid black;
+}
+
+th.center {
+    text-align: center;
+}
+
+.em_150 {
+    font-weight: bold;
+    font-size: 150%;
+    font-style: normal;
+}
+
+.em_150_notBold {
+    font-size: 150%;
+    font-style: normal;
+}
+
+.em_120_notBold {
+    font-size: 120%;
+    font-style: normal;
+}
+
+em.bold {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.box_defined {
+    padding-right: 10%;
+}
+
+.box_num {
+    border-bottom: solid black 2px;
+    padding-right: 10%;
+    font-size: 150%
+}
+
+.box_num_bigger {
+    border-bottom: solid black 4px;
+    padding-right: 20%;
+    font-size: 150%
+}
+
+.level_align {
+    padding-top: 10%;
+    vertical-align: top;
+    width: 35%;
+}
+
+.block_1 {
+    width: 30%;
+}
+
+table.speiceTable tr td.no_border {
+    border: none;
+}
+
+.right {
+    text-align: right;
+}
+
+.eighty_percent {
+    width: 60%;
+}
+
+.border_none {
+    border: none;
+}
+
+.border_td_bottom tr td {
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+.border_2px {
+    border: 2px black solid;
+}
+
+.border_left_2px {
+    /* border: none; */
+    border-left: 2px black solid;
+}
+
+.border_right_2px {
+    /* border: none; */
+    border-right: 2px black solid;
+}
+
+.border_bottom_2px {
+    /* border: none; */
+    border-bottom: 2px black solid;
+}
+
+.border_bottom_4px {
+    /* border: none; */
+    border-bottom: 4px black solid;
+}
+
+.border_top_2px {
+    /* border: none; */
+    border-top: 2px black solid;
+}
+
+#border_bottom_2px_id {
+    border-bottom: 2px black solid;
+}
+
+.width_full {
+    width: 100%;
+}
+
+.space_0 {
+    border-spacing: 0px;
+}
+
+.space_1 {
+    border-collapse: separate;
+    border-spacing: 5px 0px;
+}
+
+.padding_1 {
+    padding: 1%;
+}
+
+.padding_left_1 tr td{
+    padding-left: 1%;
+}
+
+.center_center {
+    padding: 3%;
+}
+
+.color_box {
+    background-color: antiquewhite;
+}
+
+.width_cut12px {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#border_none_id {
+    border: none;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>PropertySheet</title>
+    <link href="propertySheet_v2.css" rel="stylesheet">
+</head>
+
+<!-- handwriting version2 -->
+<body>
+<div id="page">
+    <!-- 开头 -->
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">
+                <div class="bottomCell"><span class="header">PROFESSION</span><span class="text">student</span></div>
+            </div>
+            <div class="table-cell">
+                <div class="bottomCell"><span class="header">NAME</span><span class="text">Laijunyu</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 目标 -->
+    <div id="goal">
+        <span><em>GOAL:</em> Get out of the Rat Race and onto the Fast Track by building up your <em>Passive Income</em> to be greater than your <em>Total Expenses</em></span>
+    </div>
+
+    <!-- 表格1：1）余额统计，2）收入统计，3）花费开支 -->
+    <div class="table">
+        <!-- 1）余额统计 -->
+        <div class="table-row">
+            <div class="table-caption">余额统计</div>
+        </div>
+        <div class="table-row" id="counter">
+            <table>
+                <caption>余额统计</caption>
+                <tr>
+                    <th class="center">账户</th>
+                    <th class="center">余额</th>
+                    <th class="center">备注</th>
+                </tr>
+                
+                <!-- 微信余额 -->
+                <tr id="wechat">
+                    <td>微信</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 支付宝余额 -->
+                <tr id="zhifubao">
+                    <td>支付宝余额</td>
+                    <td>￥1128.89</td>
+                    <td></td>
+                </tr>
+
+                <!-- 支付宝余额宝 -->
+                <tr id="yuebao">
+                    <td>支付宝余额宝</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 建设银行借记卡 -->
+                <tr id="ccb">
+                    <td>建设银行借记卡</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 中国银行借记卡 -->
+                <tr id="boc">
+                    <td>中国银行借记卡</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 工商银行借记卡 -->
+                <tr id="icbc">
+                    <td>工商银行借记卡</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 2）收入统计 -->
+        <div class="table-row">
+            <div class="table-caption">INCOME STATEMENT</div>
+        </div>
+
+        <div class="table-row" id="income_statement">
+            <div class="table-cell">
+                <table>
+                    <caption>INCOME</caption>
+                    <tr>
+                        <th class="center">Description</th>
+                        <th class="center">Cash Flow</th>
+                    </tr>
+
+                    <!-- 收入来源 -->
+                    <!-- 工资 -->
+                    <tr>
+                        <td><em class="bold">Salary</em></td>
+                        <td></td>
+                    </tr>
+
+                    <!-- 利息收入 -->
+                    <tr>
+                        <td><em class="bold">Interest/Dividends</em></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>股票1</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>股票2</td>
+                        <td></td>
+                    </tr>
+
+                    <!-- 资产：房地产、公司等 -->
+                    <tr>
+                        <td><em class="bold">Real Estate/Business</em></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>房地产1</td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- profession，职业 -->
+            <div class="table-cell">
+                <table class="speiceTable">
+                    <caption>PROFESSION</caption>
+                    <!-- 第一行：passive income，被动收入，也就是工资 -->
+                    <tr>
+                        <!-- 一个空的单元格，帮助布局 -->
+                        <td class="block_1"></td>
+                        <td class="level_align">
+                            <span class="box_defined"><em class="em_150">Passive Income: </em><br>
+                                (Cash Flow from <br>
+                                Interest/Dividends + <br>
+                                Real Estate/Business)
+                            </span>
+                        </td>
+
+                        <!-- 被动收入 -->
+                        <td class="level_align">
+                            <span><em class="em_150">￥</em></span>
+                            <span class="box_num_bigger">10000</span>
+                        </td>
+                    </tr>
+
+                    <!-- 第二行：总收入，也就是工资 + 其他收入 -->
+                    <tr>
+                        <td class="block_1 no_border"></td>
+                        <td class="level_align no_border right">
+                            <em class="em_150_notBold box_defined">Total Income: </em>
+                        </td>
+                        <td class="level_align no_border">
+                            <span><em class="em_150_notBold">￥</em></span>
+                            <span class="box_num">10000</span>
+                        </td>
+                    </tr>
+                </table>
+                <!-- 2个空行辅助布局 -->
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <!-- 3）花费开支 -->
+        <div class="table-row" id="expenses_statement">
+            <!-- expenses，花费：各种花费 -->
+            <div class="table-cell">
+                <table>
+                    <caption>EXPENSES</caption>
+                    <tr>
+                        <th class="center">Description</th>
+                        <th class="center">Cash Flow</th>
+                    </tr>
+                    <tr>
+                        <td>Taxes:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Home Mortgage Payment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>School Loan Payment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Car Loan Payment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Credit Card Payment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Retail Payment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Other Expenses</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Child Expenses</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Loan Payment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 总共的消费 -->
+            <div class="table-cell">
+                <div class="table border_top_2px border_bottom_2px">
+                    <div class="table-row">
+                        <div class="table-cell eighty_percent center_center border_2px color_box">
+                            <div class="table space_0">
+                                <div class="table-row">
+                                    <div class="table-cell em_120_notBold">
+                                        Number Of<br>Children:
+                                    </div>
+                                    <div class="table-cell width_full border_bottom_2px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>(Begin game with 0 Children)</div><br>
+                            <div class="table space_0">
+                                <div class="table-row">
+                                    <div class="table-cell em_120_notBold">
+                                        Per Children<br>Expenses:
+                                    </div>
+                                    <div class="table-cell width_full border_bottom_2px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-cell"></div>
+                    </div>
+                    <br>
+                    <div class="table-row">
+                        <div class="table-cell right">
+                            <em class="em_150">Total Expenses: ￥</em>
+                        </div>
+                        <div class="table-cell width_full border_bottom_4px"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 表格2：3）财产表格 -->
+    <div class="table space_0 width_cut12px">
+        <!-- 第1行：表头1 -->
+        <div class="table-row">
+            <div class="table-caption">BALANCE SHEET</div>
+        </div>
+        <!-- 第2行：表头2 -->
+        <div class="table-row">
+            <div class="table-cell like_caption">
+                ASSETS
+            </div>
+            <div class="table-cell like_caption">
+                LIABILITIES
+            </div>
+        </div>
+        <!-- 第3行 -->
+        <div class="table-row">
+            <!-- Assets，财产记录：股票、房产等 -->            
+            <div class="table-cell padding_1 border_bottom_2px border_left_2px">
+                <table  class="border_none border_td_bottom">
+                    <tr>
+                        <td colspan="3"><em class="em_bold">Saving:</em></td>
+                    </tr>
+                    <tr>
+                        <td><em class="em_bold">Stocks/Funds/CDs:</em></td>
+                        <td><em class="em_bold"># of Shares:</em></td>
+                        <td><em class="em_bold">Cost/Share</em></td>
+                    </tr>
+                    <tr>
+                        <td>股票1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><em class="em_bold">Real Estate/Business:</em></td>
+                        <td><em class="em_bold">Down Pay:</em></td>
+                        <td><em class="em_bold">Cost:</em></td>
+                    </tr>
+                    <tr>
+                        <td>房产1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Liabilities，负债：贷款、花呗、白条等 -->
+            <div class="table-cell padding_1 border_bottom_2px border_right_2px">
+                <table class="border_none border_td_bottom padding_left_1 space_1">
+                    <tr>
+                        <td>Home Mortgage:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>School Loans:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Car Loans:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Credit Cards:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="border_bottom_2px_id">Retail Debt:</td>
+                    </tr>
+                    <tr>
+                        <td>Real Estate/Business:</td>
+                        <td>Mortgage/Liability:</td>
+                    </tr>
+                    <tr>
+                        <td>房产1</td>
+                        <td>37000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="border_none_id">
+                            <em class="em_bold">Loan:</em>
+                            <span>1000</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
