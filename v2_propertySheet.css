@@ -256,3 +256,16 @@ table.speiceTable tr td.no_border {
 #border_none_id {
     border: none;
 }
+
+.button_style1 {
+    margin-left: 10%;
+    /* padding: 20% 5% 20% 5%; */
+    padding: 3%;
+    font-size: 150%;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+}
+
+.input_box{
+}
